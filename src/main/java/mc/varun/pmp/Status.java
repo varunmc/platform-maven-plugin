@@ -42,7 +42,7 @@ public class Status extends AbstractMojo {
 
 	@Override
 	public void execute() throws MojoExecutionException {
-		getLog().info("Starting platform v" + platformVersion);
+		getLog().info("Checking platform v" + platformVersion);
 		platformDirectory = new File(buildDirectory, "mc.varun/" + platformVersion);
 		executeMojo(
 			plugin(

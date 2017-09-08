@@ -40,7 +40,7 @@ public class Down extends AbstractMojo {
 
 	@Override
 	public void execute() throws MojoExecutionException {
-		getLog().info("Starting platform v" + platformVersion);
+		getLog().info("Killing platform v" + platformVersion);
 		File platformDirectory = new File(buildDirectory, "mc.varun/" + platformVersion);
 		executeMojo(
 			plugin(
