@@ -21,7 +21,7 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.project.MavenProject;
 
-@Mojo(name = "download", defaultPhase = LifecyclePhase.GENERATE_RESOURCES)
+@Mojo(name = "download")
 public class Download extends AbstractMojo {
 
 	@Parameter(defaultValue = "${project.build.directory}")
